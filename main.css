@@ -1,0 +1,59 @@
+* {
+  box-sizing: content-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Inconsolata', monospace;
+  font-size: 15pt;
+  background-color: #F2EFF0;
+  color: #493232;
+}
+
+::selection {
+  background-color: #855D5C;
+  color: #F2EFF0;
+}
+
+#brief {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 80vh;
+}
+
+#brief-text {
+  text-align: justify;
+}
+
+#arrow-up {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20vh;
+}
+
+.tile {
+  max-height: 300px;
+  max-width: 300px;
+  padding: 0.8em;
+}
+
+.text-article {
+  max-width: 800px;
+  padding: 1em;
+  margin: auto;
+}
+
+.text-article h1 {
+  text-align: center;
+}
+
+.text-article p {
+  text-align: justify;
+}
