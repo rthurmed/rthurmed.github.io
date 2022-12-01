@@ -117,8 +117,17 @@ a:not(.native) {
   border-radius: var(--pfp-width);
 }
 
-.upper {
+#title {
+  margin-bottom: var(--gap-small);
+}
+
+#bio {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin-top: var(--gap-normal);
+}
+
+.chip-area {
+  width: 100%;
 }
