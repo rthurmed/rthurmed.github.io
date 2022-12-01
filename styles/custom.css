@@ -6,13 +6,16 @@
   width: var(--pfp-width);
 
   border-radius: var(--pfp-width);
-
-  margin: auto;
-  margin-top: 4em;
 }
 
-.pfp ~ .panel {
-  margin: var(--gap-normal) 0;
+.upper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--gap-normal);
+}
+
+.main > article > * {
+  margin-bottom: var(--gap-normal);
 }
 
 .backdrop {
@@ -32,4 +35,11 @@
 #bio {
   text-align: justify;
   line-height: 2em;
+}
+
+.chip {
+  background-color: var(--color-main);
+  border-radius: var(--rounding-less);
+  padding: var(--gap-small);
+  margin-right: var(--gap-small);
 }
