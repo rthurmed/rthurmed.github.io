@@ -73,10 +73,15 @@ a:not(.native) {
 }
 
 .chip {
-  background-color: var(--color-main);
+  display: inline-block;
+  
   border-radius: var(--rounding-less);
-  padding: var(--gap-small);
+  padding: 0.4em 0.6em;
   margin-right: var(--gap-small);
+  margin-bottom: var(--gap-small);
+
+  background: var(--color-main);
+  background: linear-gradient(10deg, var(--color-main) 0%, var(--color-lighter) 100%);
 }
 
 @media (min-width: 600px) {
