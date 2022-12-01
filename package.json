@@ -1,0 +1,26 @@
+{
+  "name": "rthurmed.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rthurmed/rthurmed.github.io.git"
+  },
+  "author": "Arthur Medeiros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rthurmed/rthurmed.github.io/issues"
+  },
+  "homepage": "https://github.com/rthurmed/rthurmed.github.io#readme",
+  "devDependencies": {
+    "vite": "^3.2.4"
+  }
+}
