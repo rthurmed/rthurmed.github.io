@@ -60,6 +60,10 @@ a:not(.native) {
   text-decoration: none;
 }
 
+a {
+  color: var(--color-accent);
+}
+
 .main {
   padding: var(--gap-normal);
 }
