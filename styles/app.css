@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
   --color-text: #FFF;
   --color-main: #333;
   --color-darker: #222;
   --color-lighter: #555;
+  --color-accent: #75c586;
+  --color-transparent: rgba(0, 0, 0, 0);
 
   --font-size: 16px;
   
@@ -24,8 +28,6 @@
   --animation-time: .3s;
   --animation-ease: ease-out;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
   padding: 0;
@@ -112,6 +114,34 @@ a:not(.native) {
 }
 
 /* MORE SPECIFIC TO THIS PAGE */
+
+.pfp-container {
+  --size: calc(var(--size-component) * 4);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: var(--size);
+  width: var(--size);
+}
+
+.pfp-bg {
+  position: absolute;
+  height: var(--size);
+  width: var(--size);
+
+  background: radial-gradient(
+    circle,
+    var(--color-accent) 0%,
+    var(--color-accent) 55%,
+    var(--color-transparent) 75%,
+    var(--color-transparent) 100%
+  );
+  filter: blur(72px);
+
+  z-index: -2;
+}
 
 .pfp {
   --pfp-width: calc(var(--size-component) * 3);
