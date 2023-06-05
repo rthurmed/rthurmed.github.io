@@ -19,7 +19,7 @@
 
   --min-width: 16em;
 
-  --main-width: 600px;
+  --main-width: 85vw;
 
   --gap-small: 0.4em;
   --gap-normal: 1.5em;
@@ -27,6 +27,12 @@
 
   --animation-time: .3s;
   --animation-ease: ease-out;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --main-width: 600px;
+  }
 }
 
 * {
@@ -93,10 +99,6 @@ a {
   background: var(--color-main);
   /* background: linear-gradient(10deg, var(--color-main) 0%, var(--color-main) 60%, var(--color-lighter) 100%); */
   border: 1px solid var(--color-lighter);
-}
-
-@media (min-width: 600px) {
-  /* TODO: work on this */
 }
 
 /* LAYOUTS */
