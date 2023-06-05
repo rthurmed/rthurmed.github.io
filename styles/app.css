@@ -21,6 +21,8 @@
 
   --min-width: 16em;
 
+  --main-width: 600px;
+
   --gap-small: 0.4em;
   --gap-normal: 1.5em;
   --gap-large: 3em;
@@ -44,6 +46,10 @@ h1 {
 
 h2 {
   font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 body {
@@ -107,7 +113,7 @@ a {
 }
 
 .layout-article > .main article {
-  max-width: 600px;
+  max-width: var(--main-width);
   margin: auto;
   margin-bottom: var(--gap-large);
 }
@@ -115,6 +121,16 @@ a {
 /* spacing between elements of an article */
 .main > article > * {
   margin-bottom: var(--gap-normal);
+}
+
+.main > article > h1,
+.main > article > h2,
+.main > article > h3 {
+  margin-bottom: var(--gap-small);
+}
+
+.main img {
+  max-width: var(--main-width);
 }
 
 /* MORE SPECIFIC TO THIS PAGE */
