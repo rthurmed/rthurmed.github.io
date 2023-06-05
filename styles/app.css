@@ -112,20 +112,24 @@ a {
   flex-grow: 1;
 }
 
-.layout-article > .main article {
+.layout-article > .main section {
   max-width: var(--main-width);
   margin: auto;
   margin-bottom: var(--gap-large);
 }
 
-/* spacing between elements of an article */
-.main > article > * {
-  margin-bottom: var(--gap-normal);
+.layout-article > .main article {
+  margin-bottom: var(--gap-large);
 }
 
-.main > article > h1,
-.main > article > h2,
-.main > article > h3 {
+/* spacing between elements of an article */
+.main article > * {
+  margin: var(--gap-normal) 0px;
+}
+
+.main h1,
+.main h2,
+.main h3 {
   margin-bottom: var(--gap-small);
 }
 
@@ -186,4 +190,5 @@ a {
 
 .chip-area {
   width: 100%;
+  margin: var(--gap-normal) 0px;
 }
