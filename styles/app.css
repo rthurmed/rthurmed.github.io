@@ -59,6 +59,7 @@ h3 {
 body {
   background-color: var(--color-darker);
   min-height: 100vh;
+  position: relative;
 }
 
 p {
@@ -185,4 +186,11 @@ a {
   flex-direction: column;
   align-items: center;
   padding-top: var(--gap-normal);
+}
+
+#bgcanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  image-rendering: pixelated;
 }
